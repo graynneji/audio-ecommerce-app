@@ -1,0 +1,42 @@
+.header {
+  position: relative;
+}
+.image-hero {
+  width: 100%;
+}
+.hero-content {
+  display: flex;
+  position: absolute;
+  /* width: min-content; */
+  left: 5rem;
+  top: 17rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: center;
+  gap: 2rem;
+}
+.header-text {
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  color: #777;
+  font-weight: 200;
+}
+.main-header-text {
+  font-size: 6rem;
+  letter-spacing: 0.2rem;
+}
+.header-content {
+  font-size: 1.3rem;
+  line-height: 2;
+  letter-spacing: 0.17rem;
+}
+.hero-btn {
+  padding: 1.5rem 3rem;
+  background-color: #ff922b;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 0.17rem;
+}

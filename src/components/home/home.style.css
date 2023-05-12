@@ -1,0 +1,5 @@
+.main-container {
+  width: min(100% - 10rem, 140rem);
+  margin-inline: auto;
+  border-bottom: 0.01rem solid #444;
+}
