@@ -30,7 +30,7 @@ const Navigation = () => {
           <div className="shop-cart">
             {currentUser ? (
               <Link className="nav-links" onClick={signOutUser}>
-                {currentUser.email} Signout
+                {currentUser.displayName} Signout
               </Link>
             ) : (
               <Link className="nav-links" to="/auth">

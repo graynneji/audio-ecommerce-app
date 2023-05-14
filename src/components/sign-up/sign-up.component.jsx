@@ -1,12 +1,12 @@
 import { useState, useContext } from "react";
-
+import { updateProfile } from "firebase/auth";
 import {
   createAuthUserWithEmailAndPassword,
   createUserDocumentFromAuth,
 } from "../../utils/firebase/firebase.utils";
 import FormInput from "../form-input/form-input.component";
 // import "./sign-up-form.style.scss";
-// import Button from "../button/button.component";
+import Button from "../button/button.component";
 // import { UserContext } from "../../contexts/user.contexts";
 
 const defaultFormField = {
@@ -37,6 +37,7 @@ const SignUpForm = () => {
         email,
         password
       );
+      await updateProfile(user, { displayName });
       console.log(user);
       // setCurrentUser(user);
 
@@ -99,7 +100,7 @@ const SignUpForm = () => {
           name="confirmPassword"
           value={confirmPassword}
         />
-        <button type="submit">Sign Up</button>
+        <Button type="submit">Sign Up</Button>
       </form>
     </div>
   );

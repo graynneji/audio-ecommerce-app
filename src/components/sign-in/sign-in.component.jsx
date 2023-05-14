@@ -1,17 +1,26 @@
-import { signInAuthUserWithEmailAndPassword } from "../../utils/firebase/firebase.utils";
+import {
+  signInAuthUserWithEmailAndPassword,
+  signInWithGooglePopup,
+} from "../../utils/firebase/firebase.utils";
 import { useState } from "react";
 import { Fragment } from "react";
+import Button from "../button/button.component";
+import FormInput from "../form-input/form-input.component";
 
 const defaultFormField = {
   email: "",
   password: "",
 };
-const SignIn = () => {
+const SignInForm = () => {
   const [formField, setFormField] = useState(defaultFormField);
   const { email, password } = formField;
 
   const resetFormField = () => {
     setFormField(defaultFormField);
+  };
+
+  const signInWithGoogle = async () => {
+    await signInWithGooglePopup();
   };
 
   const handleSubmit = async (event) => {
@@ -68,6 +77,7 @@ const SignIn = () => {
           />
           <div className="buttons-container">
             <Button type="submit">Sign In</Button>
+
             <Button
               type="button"
               buttonType="google"
@@ -81,4 +91,4 @@ const SignIn = () => {
     </Fragment>
   );
 };
-export default SignIn;
+export default SignInForm;
