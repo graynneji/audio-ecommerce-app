@@ -29,9 +29,13 @@ const UniqueCategories = () => {
   console.log(uniqueCategories);
 
   return (
-    <div className=" category-container">
+    <div className="category-container">
       {uniqueCategories.map((category) => (
-        <div keys={category.category} className="category-card">
+        <div
+          key={category.category}
+          className="category-card"
+          id={category.category}
+        >
           <img
             src={category.desktop}
             alt="category-images"
@@ -40,7 +44,7 @@ const UniqueCategories = () => {
           <div className="category-details">
             <h2 className="category-name">{category.category.toUpperCase()}</h2>
             <Link className="shop-name" to={`/${category.category}`}>
-              SHOP
+              SHOP <span className="entity"> &#8250;</span>
             </Link>
           </div>
         </div>

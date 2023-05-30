@@ -3,3 +3,48 @@
   margin-inline: auto;
   border-bottom: 0.01rem solid #444;
 }
+
+/* Earphone */
+.earphone-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  text-align: center;
+
+  gap: 6rem;
+
+  margin-bottom: 9rem;
+}
+.earphone {
+  width: 100%;
+
+  border-radius: 1rem;
+}
+.earphone-content {
+  color: black;
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  background-color: rgba(153, 153, 153, 0.338);
+
+  padding: 6rem;
+  gap: 3.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.earphone-name {
+  font-size: 2.5rem;
+}
+/* Best gear */
+.best-gear {
+  display: block;
+}
+.image-best-gear {
+  transform: scale(1);
+  width: 100%;
+  /* object-fit: fill; */
+  height: 40rem;
+  border-radius: 0.5rem;
+}

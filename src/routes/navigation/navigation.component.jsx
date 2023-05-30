@@ -3,9 +3,13 @@ import { Outlet, Link } from "react-router-dom";
 import { UserContext } from "../../contexts/user.contexts";
 import { signOutUser } from "../../utils/firebase/firebase.utils";
 import "./navigation.style.css";
+import CartIcon from "../../components/cart-icon/cart-icon.component";
+import { CartContext } from "../../contexts/cart.context";
+import CartDropdown from "../../components/cart-dropdown/cart-dropdown.component";
 
 const Navigation = () => {
   const { currentUser } = useContext(UserContext);
+  const { isCartOpen } = useContext(CartContext);
   return (
     <Fragment>
       <div className="header">
@@ -37,8 +41,9 @@ const Navigation = () => {
                 Signin
               </Link>
             )}
-            <ion-icon id="icon" name="cart-outline"></ion-icon>
+            <CartIcon />
           </div>
+          {isCartOpen && <CartDropdown />}
         </div>
       </div>
       <Outlet />

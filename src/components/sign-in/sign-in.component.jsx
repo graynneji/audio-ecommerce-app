@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Fragment } from "react";
 import Button from "../button/button.component";
 import FormInput from "../form-input/form-input.component";
+import "./sign-in.style.css";
 
 const defaultFormField = {
   email: "",

@@ -1,14 +1,13 @@
 .category-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-  /* justify-content: center;
-  align-items: center; */
+
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 
   text-align: center;
 
-  gap: 5rem;
+  gap: 6rem;
 
-  /* grid-template-columns: 1fr 1fr 1fr; */
+  margin-bottom: 9rem;
 }
 .category-details {
   background-color: rgba(153, 153, 153, 0.373);
@@ -17,27 +16,43 @@
   font-size: 2rem;
   display: flex;
   flex-direction: column;
+  /* gap: 1rem; */
 }
 .category-name {
   font-size: 2rem;
   letter-spacing: 0.08rem;
-  font-weight: 400;
-  margin-bottom: 0.7rem;
-  padding-top: 5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  padding-top: 10.5rem;
+
   color: black;
   display: inline-block;
 }
 .shop-name {
   font-size: 1.7rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #777;
+  letter-spacing: 0.08rem;
 }
 .category-images {
-  width: 30%;
+  width: 52%;
   z-index: -1;
-  margin-bottom: -6rem;
+  margin-bottom: -11rem;
   margin-top: 3rem;
-  object-fit: cover;
+  /* object-fit: fill; */
 }
 .category-card {
   justify-self: center;
   align-self: center;
+}
+#headphones .category-images {
+  width: 47%;
+}
+#speakers .category-images {
+  width: 48.7%;
+}
+.entity {
+  font-size: 2.5rem;
+  color: #ff922b;
 }

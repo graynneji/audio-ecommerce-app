@@ -3,11 +3,11 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "./contexts/user.contexts";
-import { CategoryProvider } from "./contexts/category.contexts";
 
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { ProductProvider } from "./contexts/product.contexts";
+import { CartProvider } from "./contexts/cart.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,7 +15,9 @@ root.render(
     <BrowserRouter>
       <UserProvider>
         <ProductProvider>
-          <App />
+          <CartProvider>
+            <App />
+          </CartProvider>
         </ProductProvider>
       </UserProvider>
     </BrowserRouter>

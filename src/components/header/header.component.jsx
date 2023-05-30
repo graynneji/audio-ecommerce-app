@@ -5,7 +5,7 @@ import "./header.style.css";
 const Header = (props) => {
   return (
     <Fragment>
-      <div className="header">
+      <div className="header" id="header">
         <div className="hero-content">
           <h3 className="header-text">NEW PRODUCT</h3>
           <h1 className="main-header-text">

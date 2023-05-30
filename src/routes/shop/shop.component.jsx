@@ -1,25 +1,12 @@
-import { useContext, useState } from "react";
-import { ProductsContext } from "../../contexts/product.contexts";
+import { Routes, Route } from "react-router-dom";
+import Products from "../../components/products/products.component";
 
 const Shop = () => {
-  const images = require.context("../../assets/", true);
-  const { products } = useContext(ProductsContext);
   return (
-    <div>
-      <div>
-        {products.map((product) => {
-          return (
-            <div>
-              <h1>{product.name}</h1>
-              <div>
-                {/* <img src={images(`${product.image.desktop}`)} alt="My albbb" /> */}
-              </div>
-            </div>
-          );
-        })}
-      </div>
-    </div>
+    <Routes>
+      <Route index element={<Products />} />
+      {/* <Route path=":category" element={<Category />} /> */}
+    </Routes>
   );
 };
-
 export default Shop;

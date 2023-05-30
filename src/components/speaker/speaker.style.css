@@ -1,0 +1,135 @@
+.speaker-container {
+  background: #d87d4a 50% -121px/858px 858px no-repeat url("https://audiophile-aef599.netlify.app/static/media/pattern-circles.f4df3610b83b818abbbe.svg");
+  color: white;
+  margin-bottom: 4rem;
+  border-radius: 1rem;
+  gap: 0rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32.5rem, 1fr));
+  /* grid-template-columns: 1fr 1fr; */
+}
+.speaker-image {
+  width: 100%;
+  padding: 12rem 11.5rem 0rem 5rem;
+}
+
+.speaker-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 4rem 1rem 0rem;
+
+  gap: 3.2rem;
+}
+.speaker-name {
+  font-size: 3rem;
+  font-weight: 500;
+  display: inline-block;
+}
+.speaker-description {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.speaker-zx7,
+.zx7-details {
+  /* grid-column: 1/2;
+  grid-row: 1/2; */
+  grid-area: 1/-1;
+}
+.zx7 {
+  width: 100%;
+  border-radius: 1rem;
+}
+.zx7-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* margin: auto; */
+  /* text-align: center; */
+  padding-left: 4rem;
+}
+.wrapper {
+  display: flex;
+  gap: 3.2rem;
+  flex-direction: column;
+}
+
+.name-zx7 {
+  font-size: 3rem;
+  font-weight: 400;
+  letter-spacing: 0.5rem;
+  color: black;
+}
+
+.speaker-zx7-container {
+  display: grid;
+  position: relative;
+  margin-bottom: 4rem;
+}
+
+/*Media Query */
+@media screen and (max-width: 48rem) {
+  .speaker-content {
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 2rem;
+  }
+  /*
+  .speaker-image {
+    width: 80%;
+    padding-top: 0;
+    padding-bottom: 3.4rem;
+    justify-self: center;
+  }
+  */
+  .speaker-image {
+    width: 50%;
+    justify-self: center;
+    padding: 2rem;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 3.4rem;
+  }
+  .speaker-name {
+    font-size: 2.5rem;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .speaker-description {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 36rem) {
+  .speaker-name {
+    font-size: 2.5rem;
+    font-weight: 500;
+    display: inline-block;
+  }
+  .speaker-description {
+    font-size: 1.12rem;
+    font-weight: 300;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    line-height: 1.2;
+    letter-spacing: 0.2rem;
+  }
+  .speaker-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    padding-right: 6.5rem;
+
+    gap: 3.2rem;
+  }
+}
