@@ -1,0 +1,38 @@
+.product-container {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(31.9rem, 1fr));
+
+  text-align: center;
+
+  gap: 6rem;
+  padding: 2rem 5rem;
+}
+.product-details-image {
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  align-items: flex-start;
+  text-align: left;
+  padding: 4.5rem 0;
+}
+.new-product {
+  font-size: 1.5rem;
+  color: #ff922b;
+  letter-spacing: 1rem;
+  font-weight: 600;
+}
+.product-name {
+  font-size: 4.5rem;
+  padding-right: 4.5rem;
+  font-weight: 700;
+  color: black;
+}
+.product-des {
+  font-size: 1.8rem;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+}

@@ -1,3 +1,7 @@
+.head-shop {
+  text-align: center;
+  margin-top: 5rem;
+}
 .pro {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
@@ -5,6 +9,7 @@
   justify-items: center;
   align-items: start;
   padding: 2rem;
+  margin-top: 1.5rem;
 }
 .product-card-container {
   width: 100%;
@@ -13,6 +18,7 @@
   height: 350px;
   align-items: center;
   position: relative;
+  color: #444;
 }
 
 .product-card-container img {
