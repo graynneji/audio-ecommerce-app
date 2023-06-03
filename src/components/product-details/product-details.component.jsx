@@ -29,10 +29,14 @@ const ProductDetails = () => {
                   {product.name.toUpperCase()}
                 </span>
                 <span className="product-des">{product.description}</span>
-                <span>${product.price}</span>
-                <div>
-                  <div>inc</div>
-                  <Button>ADD TO CART</Button>
+                <span className="price">$ {product.price}</span>
+                <div className="add-contents">
+                  <div className="selector">
+                    <span>&#8722;</span>
+                    <span className="quantity">0</span>
+                    <span>&#43;</span>
+                  </div>
+                  <Button buttonType="product">ADD TO CART</Button>
                 </div>
               </div>
             </div>

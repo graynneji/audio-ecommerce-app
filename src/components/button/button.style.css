@@ -46,3 +46,8 @@
   color: white;
   border: none;
 }
+.button-container.see-product {
+  color: white;
+  background-color: #d87d4a;
+  border: none;
+}
